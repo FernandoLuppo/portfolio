@@ -1,13 +1,13 @@
 import { Header } from "../shared/components"
-import { Introduction } from "./components/introduction/Introduction"
+import { AboutMe, Introduction } from "./components"
 
 export const Home: React.FC = () => {
   return (
     <>
       <Header />
-      <main className="w-full flex justify-center items-center">
+      <main className="w-full flex justify-center items-center flex-col">
         <Introduction />
-        {/* About Me  */}
+        <AboutMe />
         {/* Technologies */}
         {/* Project */}
       </main>

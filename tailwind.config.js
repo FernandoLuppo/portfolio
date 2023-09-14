@@ -19,7 +19,7 @@ export default {
           "linear-gradient(105deg, rgba(191,48,48,1) 50%, rgba(26,26,26,1) 50%)"
       },
       boxShadow: {
-        card: "rgba(0, 0, 0, 0.24) 2px 3px 8px;"
+        card: " rgba(0, 0, 0, 0.1) 3px 8px 12px 0;"
       }
     }
   },
