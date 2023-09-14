@@ -4,7 +4,7 @@ export const Home: React.FC = () => {
   return (
     <>
       {/* Header */}
-      <main className="w-full flex justify-center items-center px-50px ">
+      <main className="w-full flex justify-center items-center">
         <Introduction />
         {/* About Me  */}
         {/* Technologies */}

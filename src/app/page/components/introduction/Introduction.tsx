@@ -1,19 +1,37 @@
+import user from "../../../shared/images/user.svg"
+import { IoIosArrowDown } from "react-icons/io"
+
 export const Introduction: React.FC = () => {
   return (
-    <section className="min-h-screen min-w-full flex justify-center items-center flex-col bg-introduction">
-      <div className="flex justify-center items-center">
-        <div className="bg-card border-l-card-border px-30 py-30">
-          <p className="font-rajdhani text-white-85">Ola meu nome e</p>
-          <h1 className="font-rajdhani text-white">Fernando J. A. Luppo</h1>
-          <h2 className="font-rajdhani text-white">Full-Stack Developer</h2>
-          <p className="font-rajdhani text-white-85">
-            Eu tenho 21 anos e sou apaixonado por programação.
+    <section className="min-h-screen min-w-full flex justify-center items-center flex-col bg-introduction relative px-14 max-sm:px-8">
+      <div className="flex justify-center items-center gap-24 max-lg:gap-12 max-lg:flex-col-reverse">
+        <div className="bg-card border-l-card-border px-8 py-7 rounded-3xl border-4 border-card-border shadow-card">
+          <p className="font-rajdhani text-white-85 text-2xl mb-5 max-xl:text-xl">
+            Ola meu nome é
+          </p>
+          <h1 className="font-rajdhani text-white text-7xl mb-3 max-xl:text-5xl max-sm:text-4xl">
+            Fernando J. A. Luppo
+          </h1>
+          <h2 className="font-rajdhani text-white-85 text-5xl mb-5 max-xl:text-3xl max-sm:text-2xl">
+            Full-Stack Developer
+          </h2>
+          <p className="font-rajdhani text-white-85 text-2xl max-w-lg max-xl:text-xl">
+            Tenho 20 anos e sou apaixonado por criar soluções digitais
+            inovadoras.
           </p>
         </div>
-        <div></div>
+
+        <img
+          src={user}
+          alt="Photo"
+          className="max-h-[330px] rounded-full border-4 border-card-border shadow-card max-xl:max-h-[288px]"
+        />
       </div>
 
-      <div></div>
+      <IoIosArrowDown
+        size={50}
+        className="absolute bottom-0 mb-5 text-white max-lg:hidden"
+      />
     </section>
   )
 }
