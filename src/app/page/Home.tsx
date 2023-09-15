@@ -1,4 +1,4 @@
-import { Header } from "../shared/components"
+import { Footer, Header } from "../shared/components"
 import { AboutMe, Introduction, Projects, Technologies } from "./components"
 
 export const Home: React.FC = () => {
@@ -11,7 +11,7 @@ export const Home: React.FC = () => {
         <Technologies />
         <Projects />
       </main>
-      {/* Footer */}
+      <Footer />
     </>
   )
 }
