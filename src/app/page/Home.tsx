@@ -1,5 +1,5 @@
 import { Header } from "../shared/components"
-import { AboutMe, Introduction } from "./components"
+import { AboutMe, Introduction, Technologies } from "./components"
 
 export const Home: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ export const Home: React.FC = () => {
       <main className="w-full flex justify-center items-center flex-col">
         <Introduction />
         <AboutMe />
-        {/* Technologies */}
+        <Technologies />
         {/* Project */}
       </main>
       {/* Footer */}
