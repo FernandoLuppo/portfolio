@@ -12,12 +12,13 @@ export const Introduction: React.FC = () => {
           <p className="font-rajdhani text-white-85 text-2xl mb-5 max-xl:text-xl">
             Ola meu nome é
           </p>
-          <h1 className="font-rajdhani text-white text-7xl mb-3 font-bold max-xl:text-5xl max-sm:text-4xl">
+          <h1 className="lg:animate-write lg:w-full lg:overflow-hidden lg:whitespace-nowrap lg:border-white max-lg:border-none font-rajdhani text-white text-7xl mb-3 font-bold max-xl:text-5xl max-sm:text-4xl border-r-4  pr-2">
             Fernando J. A. Luppo
           </h1>
           <h2 className="font-rajdhani text-white-85 text-5xl mb-5 font-semibold max-xl:text-3xl max-sm:text-2xl">
             Full-Stack Developer
           </h2>
+
           <p className="font-rajdhani text-white-85 text-2xl max-w-lg max-xl:text-xl">
             Tenho 20 anos e sou apaixonado por criar soluções digitais
             inovadoras.

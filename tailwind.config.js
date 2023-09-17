@@ -43,9 +43,23 @@ export default {
             opacity: "1",
             transform: "rotate-X(0)"
           }
+        },
+        write: {
+          from: {
+            width: "0"
+          },
+          to: {
+            width: "100%"
+          }
+        },
+        "write-border": {
+          "50%": {
+            borderColor: "rgba(255, 255, 255, 0)"
+          }
         }
       },
       animation: {
+        write: "write 1s, write-border 1s infinite",
         "fade-in": "fade-in 0.7s",
         "fade-in-mobile": "fade-in-mobile 0.7s",
         "fade-in-bounce": "fade-in 0.7s, bounce 1s infinite"
