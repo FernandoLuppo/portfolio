@@ -6,6 +6,12 @@ export const Home: React.FC = () => {
   const [isScrolling, setIsScrolling] = useState<boolean>(false)
 
   useEffect(() => {
+    if (window.scrollY > 10) {
+      setIsScrolling(true)
+    } else {
+      setIsScrolling(false)
+    }
+
     const headerScroll = () => {
       if (window.scrollY > 10) {
         setIsScrolling(true)
