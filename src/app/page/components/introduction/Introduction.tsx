@@ -20,7 +20,7 @@ export const Introduction: React.FC = () => {
           </h2>
 
           <p className="font-rajdhani text-white-85 text-2xl max-w-lg max-xl:text-xl">
-            Tenho 20 anos e sou apaixonado por criar soluções digitais
+            Tenho 21 anos e sou apaixonado por criar soluções digitais
             inovadoras.
           </p>
         </div>
