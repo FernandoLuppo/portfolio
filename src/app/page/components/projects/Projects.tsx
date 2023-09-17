@@ -4,7 +4,10 @@ import type { IWindowHeight } from "../../../shared/types"
 
 export const Projects: React.FC<IWindowHeight> = ({ windowHeight }) => {
   return (
-    <section className="flex items-center flex-col py-16 bg-default min-h-[850px] w-full px-14 max-sm:px-8">
+    <section
+      id="projects"
+      className="flex items-center flex-col py-16 bg-default min-h-[850px] w-full px-14 max-sm:px-8"
+    >
       <div className="flex flex-col items-center">
         <h2 className="text-3xl text-center text-white ">Projetos</h2>
         <div className="w-10/12 h-[3px] rounded-full bg-primary mt-3"></div>

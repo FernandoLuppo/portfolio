@@ -69,6 +69,9 @@ export const Header: React.FC<IProps> = ({ isScrolling }) => {
             <a
               href="#introduction"
               className="text-xl font-lato text-white-85 hover:text-white hover:font-bold"
+              onClick={() => {
+                setIsMobile(false)
+              }}
             >
               Introdução
             </a>
@@ -77,6 +80,9 @@ export const Header: React.FC<IProps> = ({ isScrolling }) => {
             <a
               href="#about"
               className="text-xl font-lato text-white-85 hover:text-white hover:font-bold"
+              onClick={() => {
+                setIsMobile(false)
+              }}
             >
               Sobre
             </a>
@@ -85,6 +91,9 @@ export const Header: React.FC<IProps> = ({ isScrolling }) => {
             <a
               href="#technology"
               className="text-xl font-lato text-white-85 hover:text-white hover:font-bold"
+              onClick={() => {
+                setIsMobile(false)
+              }}
             >
               Tecnologias
             </a>
@@ -93,6 +102,9 @@ export const Header: React.FC<IProps> = ({ isScrolling }) => {
             <a
               href="#projects"
               className="text-xl font-lato text-white-85 hover:text-white hover:font-bold"
+              onClick={() => {
+                setIsMobile(false)
+              }}
             >
               Projetos
             </a>
