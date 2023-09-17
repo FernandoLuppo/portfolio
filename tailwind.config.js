@@ -20,8 +20,37 @@ export default {
       },
       boxShadow: {
         card: " rgba(0, 0, 0, 0.1) 3px 8px 12px 0;"
+      },
+      keyframes: {
+        "fade-in": {
+          from: {
+            marginLeft: "-200px",
+            opacity: "0",
+            transform: "rotate-X(-10deg)"
+          },
+          to: {
+            marginLeft: "0",
+            opacity: "1",
+            transform: "rotate-X(0)"
+          }
+        },
+        "fade-in-mobile": {
+          from: {
+            opacity: "0",
+            transform: "rotate-X(-10deg)"
+          },
+          to: {
+            opacity: "1",
+            transform: "rotate-X(0)"
+          }
+        }
+      },
+      animation: {
+        "fade-in": "fade-in 0.7s",
+        "fade-in-mobile": "fade-in-mobile 0.7s",
+        "fade-in-bounce": "fade-in 0.7s, bounce 1s infinite"
       }
-    }
-  },
-  plugins: []
+    },
+    plugins: []
+  }
 }

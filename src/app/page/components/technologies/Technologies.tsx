@@ -16,18 +16,27 @@ import bitbucket from "../../../shared/images/bitbucket.svg"
 import vscode from "../../../shared/images/vscode.svg"
 import figma from "../../../shared/images/figma.svg"
 import { Technology } from "../../../shared/components"
+import type { IWindowHeight } from "../../../shared/types"
 
-export const Technologies: React.FC = () => {
+export const Technologies: React.FC<IWindowHeight> = ({ windowHeight }) => {
+  console.log(windowHeight)
+
   return (
     <section
       id="technology"
       className="flex items-center justify-center bg-primary min-h-[850px] w-full px-14 max-sm:px-8"
     >
-      <div className="max-w-[1372px] px-[100px] py-16 bg-card rounded-3xl border-4 border-card-border shadow-card max-sm:px-8 max-sm:py-6 max-lg:my-[85px]">
+      <div
+        className={`${
+          windowHeight >= 1200
+            ? `block max-lg:animate-fade-in-mobile lg:animate-fade-in max-w-[1372px] px-[100px] py-16 bg-card rounded-3xl border-4 border-card-border shadow-card max-sm:px-8 max-sm:py-6 max-lg:my-[85px]`
+            : `hidden`
+        } `}
+      >
         <div className="flex justify-center flex-col items-center">
-          <h3 className="text-3xl text-center text-white max-sm:text-xl">
+          <h2 className="text-3xl text-center text-white max-sm:text-xl">
             Abaixo as tecnologias que tenho conhecimento
-          </h3>
+          </h2>
           <div className="w-10/12 h-[3px] rounded-full bg-primary mt-3"></div>
         </div>
 
