@@ -25,15 +25,17 @@ export const Projects: React.FC<IWindowHeight> = ({ windowHeight }) => {
           key="Streaming"
           title="Streaming"
           text={streaming}
-          video="/test"
+          src="https://user-images.githubusercontent.com/95176596/222930476-31c3b3bb-f2d8-47eb-948d-9227403e7d1d.png"
           inProduction={false}
+          link="https://github.com/FernandoLuppo/movie"
         />
         <ProjectCard
           key="PokeDex"
           title="PokeDex"
           text={pokeDexText}
-          video="/test"
+          src="https://user-images.githubusercontent.com/95176596/266644611-73cdb878-924f-4df0-96af-7a4218695c1d.png"
           inProduction={false}
+          link="https://github.com/FernandoLuppo/PokeDex"
         />
         <ProjectCard key="Clima" title="Clima" inProduction={true} />
       </div>
