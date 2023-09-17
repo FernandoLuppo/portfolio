@@ -1,6 +1,5 @@
 import { AiFillGithub } from "react-icons/ai"
 import { BiLogoLinkedin } from "react-icons/bi"
-import { BsWhatsapp } from "react-icons/bs"
 import type { IWindowHeight } from "../../../shared/types"
 
 export const AboutMe: React.FC<IWindowHeight> = ({ windowHeight }) => {
@@ -35,9 +34,18 @@ export const AboutMe: React.FC<IWindowHeight> = ({ windowHeight }) => {
           emocionantes para aplicar minha paixão pela tecnologia e programação.
         </p>
         <div className="flex items-center justify-center gap-10 w-full max-sm:gap-6">
-          <AiFillGithub size={60} className="text-white max-sm:w-[50px]" />
-          <BiLogoLinkedin size={60} className="text-white max-sm:w-[50px]" />
-          <BsWhatsapp size={50} className="text-white max-sm:w-[40px]" />
+          <a href="https://github.com/FernandoLuppo">
+            <AiFillGithub
+              size={60}
+              className="transition-all text-white max-sm:w-[50px] hover:scale-125"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/fernando-luppo-331496203/">
+            <BiLogoLinkedin
+              size={60}
+              className="transition-all text-white max-sm:w-[50px] hover:scale-125 hover:text-blue-500"
+            />
+          </a>
         </div>
       </div>
     </section>
