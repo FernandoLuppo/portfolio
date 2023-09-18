@@ -28,10 +28,11 @@ export const AboutMe: React.FC<IWindowHeight> = ({ windowHeight }) => {
         <p className="text-lg mb-10 text-white-85">
           Tenho 21 anos e sou um entusiasta da programação e da tecnologia.
           Atualmente, faço faculdade de Engenharia de Software e tenho
-          habilidades em programação orientada a objetos, testes e noções de
-          linux. Também tenho noções de design de interface de usuário (UI) e
-          experiência do usuário (UX). Estou sempre em busca de desafios
-          emocionantes para aplicar minha paixão pela tecnologia e programação.
+          habilidades em programação orientada a objetos seguindo os princípios
+          SOLID, testes e noções de linux. Também tenho noções de design de
+          interface de usuário (UI) e experiência do usuário (UX). Estou sempre
+          em busca de desafios emocionantes para aplicar minha paixão pela
+          tecnologia e programação.
         </p>
         <div className="flex items-center justify-center gap-10 w-full max-sm:gap-6">
           <a href="https://github.com/FernandoLuppo">
