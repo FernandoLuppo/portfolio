@@ -59,7 +59,7 @@ export default {
         }
       },
       animation: {
-        write: "write 1s, write-border 1s infinite",
+        write: "write 2.5s, write-border 1s infinite",
         "fade-in": "fade-in 0.7s",
         "fade-in-mobile": "fade-in-mobile 0.7s",
         "fade-in-bounce": "fade-in 0.7s, bounce 1s infinite"
