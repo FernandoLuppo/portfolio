@@ -3,6 +3,7 @@ import react from "../../../shared/images/react.svg"
 import node from "../../../shared/images/node.svg"
 import mongodb from "../../../shared/images/mongodb.svg"
 import mysql from "../../../shared/images/mysql.svg"
+import jest from "../../../shared/images/Jest.svg"
 import tailwind from "../../../shared/images/tailwind.svg"
 import styledComponents from "../../../shared/images/styled-components.svg"
 import html from "../../../shared/images/html.svg"
@@ -46,6 +47,7 @@ export const Technologies: React.FC<IWindowHeight> = ({ windowHeight }) => {
           <Technology key="Node" src={node} label="Node" />
           <Technology key="MongoDB" src={mongodb} label="MongoDB" />
           <Technology key="MySQL" src={mysql} label="MySQL" />
+          <Technology key="Jest" src={jest} label="Jest" />
           <Technology key="TailWind" src={tailwind} label="TailWind" />
           <Technology
             key="Styled Components"
