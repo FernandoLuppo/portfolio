@@ -1,4 +1,5 @@
-import user from "../../../shared/images/user.svg"
+import me from "../../../shared/images/me.jpg"
+
 import { IoIosArrowDown } from "react-icons/io"
 
 export const Introduction: React.FC = () => {
@@ -26,9 +27,9 @@ export const Introduction: React.FC = () => {
         </div>
 
         <img
-          src={user}
+          src={me}
           alt="Photo"
-          className="max-h-[330px] rounded-full border-4 border-card-border shadow-card max-xl:max-h-[288px]"
+          className="object-fill max-h-[330px] min-w-[330px] rounded-full border-4 border-card-border shadow-card max-xl:max-h-[288px] max-xl:min-w-[288px]"
         />
       </div>
 
