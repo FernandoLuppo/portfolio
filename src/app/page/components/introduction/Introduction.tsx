@@ -1,4 +1,4 @@
-import me from "../../../shared/images/me.jpg"
+import me from "../../../shared/assets/images/me.jpg"
 
 import { IoIosArrowDown } from "react-icons/io"
 

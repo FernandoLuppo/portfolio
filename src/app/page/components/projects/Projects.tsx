@@ -1,5 +1,8 @@
 import { ProjectCard } from "./components"
 import { pokeDexText, streaming } from "./projectTexts/ProjectTexts"
+import pokeDexVideo from "../../../shared/assets/videos/PokeDex.mp4"
+import StreamingVideo from "../../../shared/assets/videos/Streaming.mp4"
+
 import type { IWindowHeight } from "../../../shared/types"
 
 export const Projects: React.FC<IWindowHeight> = ({ windowHeight }) => {
@@ -28,7 +31,7 @@ export const Projects: React.FC<IWindowHeight> = ({ windowHeight }) => {
           key="Streaming"
           title="Streaming"
           text={streaming}
-          src="https://user-images.githubusercontent.com/95176596/222930476-31c3b3bb-f2d8-47eb-948d-9227403e7d1d.png"
+          videoId={StreamingVideo}
           inProduction={false}
           link="https://github.com/FernandoLuppo/movie"
         />
@@ -36,7 +39,7 @@ export const Projects: React.FC<IWindowHeight> = ({ windowHeight }) => {
           key="PokeDex"
           title="PokeDex"
           text={pokeDexText}
-          src="https://user-images.githubusercontent.com/95176596/266644611-73cdb878-924f-4df0-96af-7a4218695c1d.png"
+          videoId={pokeDexVideo}
           inProduction={false}
           link="https://github.com/FernandoLuppo/PokeDex"
         />
