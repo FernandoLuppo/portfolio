@@ -20,7 +20,10 @@ export const Introduction: React.FC = () => {
             Full-Stack Developer
           </h2>
 
-          <p className="font-rajdhani text-white-85 text-2xl max-w-lg max-xl:text-xl">
+          <p
+            data-testid="introduction-text"
+            className="font-rajdhani text-white-85 text-2xl max-w-lg max-xl:text-xl"
+          >
             Tenho 21 anos e sou apaixonado por criar soluções digitais
             inovadoras.
           </p>
@@ -37,6 +40,7 @@ export const Introduction: React.FC = () => {
         <IoIosArrowDown
           size={50}
           className="animate-fade-in-bounce absolute bottom-0 mb-5 text-white max-lg:hidden"
+          data-testid="introduction-arrow"
         />
       </a>
     </section>
