@@ -17,6 +17,7 @@ export const Projects: React.FC<IWindowHeight> = ({ windowHeight }) => {
       </div>
 
       <div
+        data-testid="projects-card"
         className={`${
           windowHeight >= 2050 && window.innerWidth > 1024
             ? `flex items-center justify-center gap-16 flex-wrap w-full mt-20 lg:animate-fade-in`
@@ -33,7 +34,6 @@ export const Projects: React.FC<IWindowHeight> = ({ windowHeight }) => {
           text={streaming}
           videoId={StreamingVideo}
           inProduction={false}
-          link="https://github.com/FernandoLuppo/movie"
         />
         <ProjectCard
           key="PokeDex"
@@ -41,7 +41,6 @@ export const Projects: React.FC<IWindowHeight> = ({ windowHeight }) => {
           text={pokeDexText}
           videoId={pokeDexVideo}
           inProduction={false}
-          link="https://github.com/FernandoLuppo/PokeDex"
         />
         <ProjectCard key="Clima" title="Clima" inProduction={true} />
       </div>

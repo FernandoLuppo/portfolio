@@ -3,7 +3,6 @@ interface IProps {
   videoId?: string
   title: string
   text?: string
-  link?: string
 }
 
 export const ProjectCard: React.FC<IProps> = ({
