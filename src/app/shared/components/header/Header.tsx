@@ -19,6 +19,7 @@ export const Header: React.FC<IProps> = ({ isScrolling }) => {
 
   return (
     <header
+      data-testid="header"
       className={`fixed top-0 w-full z-10 flex justify-between items-center px-24 py-5 max-lg:flex-col max-md:px-5 ${
         !isScrolling && !isMobile
           ? `bg-transparent`
@@ -33,6 +34,7 @@ export const Header: React.FC<IProps> = ({ isScrolling }) => {
         <a href="#introduction" className="flex items-center gap-2">
           <BsCodeSlash
             size={50}
+            data-testid="logo"
             className={`transition-all ${
               isMobile || isScrolling ? `text-white` : `text-default`
             }`}
@@ -50,7 +52,11 @@ export const Header: React.FC<IProps> = ({ isScrolling }) => {
             {isMobile ? (
               <AiOutlineClose size={30} className="text-white" />
             ) : (
-              <AiOutlineMenu size={30} className="text-white" />
+              <AiOutlineMenu
+                size={30}
+                className="text-white"
+                data-testid="menu-mobile"
+              />
             )}
           </button>
         </div>
