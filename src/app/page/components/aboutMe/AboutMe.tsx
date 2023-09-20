@@ -9,6 +9,7 @@ export const AboutMe: React.FC<IWindowHeight> = ({ windowHeight }) => {
       className="flex items-center justify-center bg-default min-h-[850px] w-full px-14 max-sm:px-8"
     >
       <div
+        data-testid="aboutMe-card"
         className={`${
           windowHeight >= 350
             ? `block max-lg:animate-fade-in-mobile lg:animate-fade-in max-w-4xl px-12 py-10 bg-card rounded-3xl border-4 border-card-border shadow-card max-sm:px-8 max-sm:py-6 max-lg:my-[85px]`
@@ -25,7 +26,7 @@ export const AboutMe: React.FC<IWindowHeight> = ({ windowHeight }) => {
             Desenvolvedor Full-Stack
           </h4>
         </div>
-        <p className="text-lg mb-10 text-white-85">
+        <p data-testid="aboutMe-text" className="text-lg mb-10 text-white-85">
           Tenho 21 anos e sou um entusiasta da programação e da tecnologia.
           Atualmente, faço faculdade de Engenharia de Software e tenho
           habilidades em programação orientada a objetos seguindo os princípios
