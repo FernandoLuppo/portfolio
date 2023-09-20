@@ -28,6 +28,7 @@ export const Technologies: React.FC<IWindowHeight> = ({ windowHeight }) => {
       className="flex items-center justify-center bg-primary min-h-[850px] w-full px-14 max-sm:px-8"
     >
       <div
+        data-testid="technologies-card"
         className={`${
           windowHeight >= 1200
             ? `block max-lg:animate-fade-in-mobile lg:animate-fade-in max-w-[1372px] px-[100px] py-16 bg-card rounded-3xl border-4 border-card-border shadow-card max-sm:px-8 max-sm:py-6 max-lg:my-[85px]`
@@ -36,7 +37,7 @@ export const Technologies: React.FC<IWindowHeight> = ({ windowHeight }) => {
       >
         <div className="flex justify-center flex-col items-center">
           <h2 className="text-3xl text-center text-white max-sm:text-xl">
-            Abaixo as tecnologias que tenho conhecimento
+            Tecnologias que tenho conhecimento
           </h2>
           <div className="w-10/12 h-[3px] rounded-full bg-primary mt-3"></div>
         </div>
