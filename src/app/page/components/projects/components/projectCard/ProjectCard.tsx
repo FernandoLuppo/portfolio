@@ -10,8 +10,7 @@ export const ProjectCard: React.FC<IProps> = ({
   videoId,
   title,
   text,
-  inProduction,
-  link
+  inProduction
 }) => {
   return (
     <div
