@@ -8,7 +8,10 @@ export const Introduction: React.FC = () => {
       id="introduction"
       className="min-h-screen min-w-full flex justify-center items-center flex-col bg-introduction relative px-14 max-sm:px-8"
     >
-      <div className="max-lg:animate-fade-in-mobile lg:animate-fade-in flex justify-center items-center gap-24 max-lg:gap-12 max-lg:flex-col-reverse">
+      <div
+        data-testid="introduction-card"
+        className="max-lg:animate-fade-in-mobile lg:animate-fade-in flex justify-center items-center gap-24 max-lg:gap-12 max-lg:flex-col-reverse"
+      >
         <div className="bg-card border-l-card-border px-8 py-7 rounded-3xl border-4 border-card-border shadow-card">
           <p className="font-rajdhani text-white-85 text-2xl mb-5 max-xl:text-xl">
             Ola meu nome é

@@ -20,8 +20,6 @@ import { Technology } from "../../../shared/components"
 import type { IWindowHeight } from "../../../shared/types"
 
 export const Technologies: React.FC<IWindowHeight> = ({ windowHeight }) => {
-  console.log(windowHeight)
-
   return (
     <section
       id="technology"
