@@ -25,17 +25,17 @@ export const metadata: Metadata = {
     "programador freelancer",
     "desenvolvimento performance",
   ],
-  authors: [{ name: "Fernando Luppo", url: "https://seusite.com" }],
+  authors: [{ name: "Fernando Luppo", url: "https://fernandoluppo.com.br" }],
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://seusite.com",
+    url: "https://fernandoluppo.com.br",
     title: "Fernando Luppo | Desenvolvedor Full Stack - Sites e Apps Mobile",
     description:
       "Soluções completas em desenvolvimento web e mobile com alta performance",
     images: [
       {
-        url: "https://seusite.com/images/og-image.jpg",
+        url: "https://fernandoluppo.com.br/metadata/wallpaper.png",
         width: 1200,
         height: 630,
         alt: "Fernando Luppo - Desenvolvedor Full Stack",
@@ -43,16 +43,9 @@ export const metadata: Metadata = {
     ],
     siteName: "Fernando Luppo",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Fernando Luppo | Desenvolvedor Full Stack",
-    description:
-      "Especialista em Next.js, React Native e Node.js para sites e apps mobile",
-    images: ["https://seusite.com/images/twitter-card.jpg"],
-  },
-  metadataBase: new URL("https://seusite.com"),
+  metadataBase: new URL("https://fernandoluppo.com.br"),
   alternates: {
-    canonical: "https://seusite.com",
+    canonical: "https://fernandoluppo.com.br",
   },
   robots: {
     index: true,
