@@ -6,7 +6,7 @@ import { Card } from "./components";
 export const Experience = () => {
   return (
     <Section type={800} key="experience" id="experiences">
-      <Title label="Experience" key="experience-title" />
+      <Title label="Experiência" key="experience-title" />
 
       <div className="flex flex-col justify-center items-center gap-12">
         {EXPERIENCE_LIST.map((item) => (
