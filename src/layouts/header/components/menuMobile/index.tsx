@@ -33,7 +33,7 @@ export const MenuMobile = () => {
           </button>
 
           <div className="mt-12 mb-6 h-full flex flex-col justify-between">
-            <Nav />
+            <Nav setShowModal={setShowModal} />
             <SocialButtons />
           </div>
         </div>

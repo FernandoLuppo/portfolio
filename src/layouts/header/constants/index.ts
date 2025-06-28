@@ -4,7 +4,7 @@ export const NAV_OPTIONS = [
     href: "#about",
   },
   {
-    label: "Servoços",
+    label: "Serviços",
     href: "#services",
   },
   {
