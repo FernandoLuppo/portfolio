@@ -8,7 +8,7 @@ export const Experience = () => {
     <Section type={800} key="experience" id="experiences">
       <Title label="Experiência" key="experience-title" />
 
-      <div className="flex flex-col justify-center items-center gap-12">
+      <div className="flex flex-col gap-12 ">
         {EXPERIENCE_LIST.map((item) => (
           <Card key={item.position} item={item} />
         ))}
