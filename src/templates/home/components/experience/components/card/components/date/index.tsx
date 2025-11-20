@@ -2,7 +2,7 @@ import { ICard } from "../../types";
 
 export const Date = ({ item }: ICard) => {
   return (
-    <div className="items-baseline gap-2 justify-self-end hidden sm:flex">
+    <div className="items-baseline gap-2 justify-self-end hidden xl:flex">
       <div className="items-center wrap-anywhere hidden xl:flex">
         <div className="flex items-center w-fit p-2 bg-dark-600 text-gray-600 dark:text-gray-400">
           <span>{item.date}</span>

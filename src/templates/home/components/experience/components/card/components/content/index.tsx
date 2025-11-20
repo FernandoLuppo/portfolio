@@ -11,7 +11,7 @@ export const Content = ({ item }: ICard) => {
 
       <p className="text-gray list-disc mb-4">{item.description}</p>
 
-      <ul className="pl-6 flex flex-col gap-2">
+      <ul className="pl-6 flex flex-col lg:items-start gap-2">
         {item.list.map((item) => (
           <li key={item} className="text-gray list-disc">
             {item}
