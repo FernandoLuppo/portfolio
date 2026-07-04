@@ -2,7 +2,44 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["fonts.googleapis.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "fonts.googleapis.com",
+      },
+    ],
+    formats: ["image/avif", "image/webp"],
+  },
+
+  turbopack: {
+    rules: {
+      "*.svg": {
+        loaders: [
+          {
+            loader: "@svgr/webpack",
+            options: {
+              exportType: "default",
+            },
+          },
+        ],
+        as: "*.js",
+      },
+    },
+  },
+
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [
+        {
+          loader: "@svgr/webpack",
+          options: {
+            exportType: "default",
+          },
+        },
+      ],
+    });
+    return config;
   },
 };
 

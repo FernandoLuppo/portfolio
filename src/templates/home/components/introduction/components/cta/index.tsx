@@ -6,8 +6,8 @@ export const CTA = () => {
     <div className="flex gap-4 items-center justify-center sm:justify-start">
       <div className="group">
         <Link
-          href="/files/Fernando_Luppo.pdf"
-          download="Curriculo_Fernando_Luppo.pdf"
+          href="/files/fernando_luppo_cv.pdf"
+          download="fernando_luppo_cv.pdf"
           className="text-white bg-primary rounded-lg w-fit cursor-pointer shadow-default p-4 lg:p-6 text-lg lg:text-2xl scale-animation-hover"
         >
           Download CV

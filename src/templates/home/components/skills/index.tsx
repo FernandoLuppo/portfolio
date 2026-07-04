@@ -1,7 +1,6 @@
 import { Section } from "@/layouts";
 import { Title } from "@/shared/components";
 import { TECH_SKILL_LIST } from "./constants";
-import Image from "next/image";
 
 export const Skills = () => {
   return (
@@ -9,25 +8,21 @@ export const Skills = () => {
       <Title label="Skills" key="skills-title" />
 
       <div className="flex flex-wrap justify-center items-baseline gap-x-8 gap-y-6">
-        {TECH_SKILL_LIST.map((item) => {
-          const titleWithBreaks = item.title.split(" ").join("<br />");
-
+        {TECH_SKILL_LIST.map(({ Icon, title, color }) => {
           return (
             <div
-              key={item.title}
+              key={title}
               className="text-center flex flex-col items-center"
+              style={{ color }}
             >
-              <Image
-                src={item.icon}
-                alt={item.title}
-                height={50}
-                width={50}
-                className="max-h-[50px]"
+              <Icon
+                className="max-h-[50px] w-auto"
+                style={{ fill: 'currentColor' }}
+                aria-hidden="true"
               />
-              <h3
-                className="text-2xl font-bold"
-                dangerouslySetInnerHTML={{ __html: titleWithBreaks }}
-              />
+              <h3 className="text-2xl font-bold whitespace-pre-line text-white">
+                {title.replace(" ", "\n")}
+              </h3>
             </div>
           );
         })}

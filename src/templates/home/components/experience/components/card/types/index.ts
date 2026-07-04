@@ -5,5 +5,6 @@ export interface ICard {
     description: string;
     date: string;
     list: string[];
+    stack: string;
   };
 }

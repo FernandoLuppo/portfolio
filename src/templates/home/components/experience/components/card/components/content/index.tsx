@@ -18,6 +18,7 @@ export const Content = ({ item }: ICard) => {
           </li>
         ))}
       </ul>
+      <p className="mt-8"><span className="text-gray">Tech Stack:</span> {item.stack}</p>
     </div>
   );
 };
